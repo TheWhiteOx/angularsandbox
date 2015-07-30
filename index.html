@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+	<!-- stylesheets -->
 	<link ref="stylesheet" href="node_modules/materialize-css/bin/materialize.css">
 	<link ref="stylesheet" href="index.css">
+	
+	<!-- to counter loading bugs -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="node_modules/angular/angular.js"></script>
 </head>
 
 <body ng-app="angularApp" ng-controller="angularController">
@@ -12,8 +16,7 @@
 		{{element.value}}
 	</div>
 
-	<script src="node_modules/angular/angular.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- remaining js src files -->
 	<script src="node_modules/materialize-css/bin/materialize.js"></script>
 	<script src="client.js"></script>
 </body>
